@@ -1,0 +1,7 @@
+# Ignore the .git directory inside awesome-akash
+data/awesome-akash/.git/
+
+# Other common ignores
+node_modules/
+.DS_Store
+*.log 

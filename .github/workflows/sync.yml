@@ -13,7 +13,7 @@ jobs:
       - name: Checkout the repo with submodules
         uses: actions/checkout@v3
         with:
-          submodules: recursive
+          submodules: recursive  # This will still be needed for other submodules
           fetch-depth: 0  # Needed to get full history and submodule commits
 
       - name: Initialize and update submodules
@@ -27,15 +27,15 @@ jobs:
           echo "data directory:"
           ls -la data || echo "⚠️ 'data' directory not found"
 
-      - name: Update awesome-akash submodule
+      - name: Update awesome-akash repository
         run: |
           if [ -d "data/awesome-akash" ]; then
             cd data/awesome-akash
-            git checkout master
             git pull origin master
             cd ../..
           else
-            echo "⚠️ awesome-akash directory not found, skipping."
+            echo "⚠️ awesome-akash directory not found, cloning it now..."
+            git clone https://github.com/akash-network/awesome-akash data/awesome-akash
           fi
 
       - name: Update docs-akash submodule

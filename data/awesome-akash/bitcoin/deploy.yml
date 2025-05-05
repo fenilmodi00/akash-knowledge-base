@@ -1,0 +1,48 @@
+---
+version: "2.0"
+services:
+  app:
+    image: declab/bitcoin_node:0.1
+    env:
+      - "LINK_BINARY=https://bitcoin.org/bin/bitcoin-core-27.0/bitcoin-27.0-x86_64-linux-gnu.tar.gz" # The download address of the binary file.
+      - "SNAPSHOT=" # Link to node snapshot (disable if you want to sync the full node). 
+      - "ARGS=--prune=20000" #bitcoind startup flags
+    #params:
+    #  storage:
+    #    data:
+    #      mount: /root/
+    expose:
+      - port: 8332 #RPC port
+        as: 80
+        to:
+          - global: true
+      - port: 8333 #P2P port
+        to:
+          - global: true
+profiles:
+  compute:
+    app:
+      resources:
+        cpu:
+          units: 2.0
+        memory:
+          size: 2Gi
+        storage:
+          size: 30Gi # A full Bitcoin node requires over 600 gigabytes.
+          #- name: data
+          #  size: 600Gi
+          #  attributes:
+          #    persistent: true
+          #    class: beta3
+  placement:
+    akash: 
+      attributes:            
+      pricing:
+        app:
+          denom: uakt
+          amount: 10000
+deployment:
+  app:
+    akash:
+      profile: app
+      count: 1 

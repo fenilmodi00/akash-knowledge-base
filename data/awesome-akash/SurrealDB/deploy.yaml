@@ -1,0 +1,42 @@
+---
+version: '2.0'
+services:
+  surrealdb:
+    image: 'surrealdb/surrealdb:1.0.0-beta.8'
+    expose:
+      - port: 8000
+        as: 8000
+        to:
+          - global: true
+    args:
+      - start
+profiles:
+  compute:
+    surrealdb:
+      resources:
+        cpu:
+          units: 1
+        memory:
+          size: 1Gi
+        storage:
+          - size: 1Gi
+  placement:
+    akash:
+      #######################################################
+      #Keep this section to deploy on trusted providers
+      signedBy:
+        anyOf:
+          - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
+      #######################################################
+      #Remove this section to deploy on untrusted providers
+      #Beware* You may have deployment, security, or other issues on untrusted providers
+      #https://akash.network/docs/providers/audited-attributes
+      pricing:
+        surrealdb:
+          denom: uakt
+          amount: 10000
+deployment:
+  surrealdb:
+    akash:
+      profile: surrealdb
+      count: 1

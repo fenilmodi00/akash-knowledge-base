@@ -1,0 +1,1835 @@
+.
+├── .git
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── ORIG_HEAD
+│   ├── branches
+│   ├── config
+│   ├── config.worktree
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   ├── sendemail-validate.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   ├── exclude
+│   │   └── sparse-checkout
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               └── HEAD
+│   ├── modules
+│   │   └── data
+│   │       └── awesome-akash
+│   │           ├── FETCH_HEAD
+│   │           ├── HEAD
+│   │           ├── branches
+│   │           ├── config
+│   │           ├── description
+│   │           ├── hooks
+│   │           │   ├── applypatch-msg.sample
+│   │           │   ├── commit-msg.sample
+│   │           │   ├── fsmonitor-watchman.sample
+│   │           │   ├── post-update.sample
+│   │           │   ├── pre-applypatch.sample
+│   │           │   ├── pre-commit.sample
+│   │           │   ├── pre-merge-commit.sample
+│   │           │   ├── pre-push.sample
+│   │           │   ├── pre-rebase.sample
+│   │           │   ├── pre-receive.sample
+│   │           │   ├── prepare-commit-msg.sample
+│   │           │   ├── push-to-checkout.sample
+│   │           │   ├── sendemail-validate.sample
+│   │           │   └── update.sample
+│   │           ├── index
+│   │           ├── info
+│   │           │   └── exclude
+│   │           ├── logs
+│   │           │   ├── HEAD
+│   │           │   └── refs
+│   │           ├── objects
+│   │           │   ├── info
+│   │           │   └── pack
+│   │           ├── packed-refs
+│   │           └── refs
+│   │               ├── heads
+│   │               ├── remotes
+│   │               └── tags
+│   ├── objects
+│   │   ├── 25
+│   │   │   └── a45a6c443d5b9d5736ea3f698902c6aba62435
+│   │   ├── 74
+│   │   │   └── 4bc4ec4601b31845c7bb4805ea445046596d76
+│   │   ├── 92
+│   │   │   └── e04f70b5bf8acc0e2bd23c83be89c96e2408d8
+│   │   ├── info
+│   │   └── pack
+│   │       ├── pack-d3814322f0aecaf616a58d14fd2fcee5c3aad958.idx
+│   │       ├── pack-d3814322f0aecaf616a58d14fd2fcee5c3aad958.pack
+│   │       └── pack-d3814322f0aecaf616a58d14fd2fcee5c3aad958.rev
+│   ├── packed-refs
+│   └── refs
+│       ├── heads
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       │       └── HEAD
+│       └── tags
+├── .gitmodules
+├── README.md
+├── data
+│   ├── awesome-akash
+│   │   ├── .git
+│   │   ├── .github
+│   │   │   ├── CODEOWNERS
+│   │   │   └── workflows
+│   │   │       └── main.yaml
+│   │   ├── .gitignore
+│   │   ├── AI-Image-App
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── Screenshot(232).png
+│   │   │   ├── Screenshot(233).png
+│   │   │   ├── Screenshot(234).png
+│   │   │   ├── ai-image-app_screen-capture.webm
+│   │   │   └── deploy.yaml
+│   │   ├── AUTOMATIC1111
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── model
+│   │   │   └── run.sh
+│   │   ├── ChatGLM-6B
+│   │   │   ├── Dockerfile
+│   │   │   ├── README-THUDM.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── web_demo.py
+│   │   ├── CodiMD
+│   │   │   ├── Readme.md
+│   │   │   ├── codimd.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── DeepSeek-Janus
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── DeepSeek-R1
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deepseek.jpg
+│   │   │   └── deploy.yaml
+│   │   ├── DeepSeek-R1-Distill-Llama-70B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── DeepSeek-R1-Distill-Llama-8B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── DeepSeek-R1-Distill-Qwen-1.5B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── DeepSeek-R1-Distill-Qwen-14B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── DeepSeek-R1-Distill-Qwen-32B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── DeepSeek-R1-Distill-Qwen-7B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── Dharani
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Elizaos-ai_Agents
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   └── image.png
+│   │   ├── Ethereum_2.0
+│   │   │   ├── README.md
+│   │   │   ├── create_validator_key_en(Linux).md
+│   │   │   ├── create_validator_key_ru(Linux).md
+│   │   │   ├── deploy.yml
+│   │   │   └── main.sh
+│   │   ├── FLock-training-node
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   └── flock.jpg
+│   │   ├── FLock-validator
+│   │   │   ├── README.md
+│   │   │   └── deploy.yml
+│   │   ├── Falcon-7B
+│   │   │   ├── Dockerfile
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   ├── falcon.jpg
+│   │   │   ├── falcon7b.py
+│   │   │   ├── index.html
+│   │   │   └── readme.md
+│   │   ├── FastChat
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── fastchat.png
+│   │   │   └── start.sh
+│   │   ├── Foundry-rit-ai-training-model-challenge
+│   │   │   ├── README.md
+│   │   │   └── deploy.yml
+│   │   ├── Grav
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Kadena
+│   │   │   ├── README.md
+│   │   │   └── deploy.yml
+│   │   ├── LICENSE
+│   │   ├── Llama-2-70B
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── main.py
+│   │   │   ├── static
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   └── templates
+│   │   │       └── index.html
+│   │   ├── Llama-3-70B
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-3-8B
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-3-Groq-8B-Tool-Use
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-3.1-405B-AWQ-INT4
+│   │   │   ├── README.md
+│   │   │   └── deploy.yml
+│   │   ├── Llama-3.1-405B-BF16
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── llama_1.jpg
+│   │   ├── Llama-3.1-405B-FP8
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── llama_2.jpg
+│   │   ├── Llama-3.1-8B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── llama_3.jpg
+│   │   ├── Llama-3.2-11B-Vision-Instruct
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-3.2-3B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-3.2-90B-Vision-Instruct
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-3.3-70B
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-3_3-Nemotron-Super-49B-v1
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-4-Maverick-17B-128E-Instruct-FP8
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── Llama-4-Scout-17B-16E-Instruct
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── MemoryGame
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Mistral-7B
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── MyEtherWallet
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── MySQL
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Periodic-Table-Creator
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── QwQ-32B
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── qwenlm.png
+│   │   ├── Qwen3-235B-A22B-FP8
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── RAIR-Dapp
+│   │   │   ├── RAIR.png
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yml
+│   │   ├── README.md
+│   │   ├── Redash
+│   │   │   ├── README.md
+│   │   │   ├── Redash Queries
+│   │   │   │   ├── 1. Network Usage Metrics
+│   │   │   │   │   ├── 1a.sql
+│   │   │   │   │   ├── 1b.sql
+│   │   │   │   │   ├── 1c.sql
+│   │   │   │   │   └── 1d.sql
+│   │   │   │   ├── 2. Provider Network State & Growth Metrics
+│   │   │   │   │   ├── 2a.sql
+│   │   │   │   │   ├── 2b.sql
+│   │   │   │   │   ├── 2c-e.sql
+│   │   │   │   │   ├── 2f.sql
+│   │   │   │   │   ├── 2g.sql
+│   │   │   │   │   ├── 2h.sql
+│   │   │   │   │   ├── 2i.sql
+│   │   │   │   │   └── 2j.sql
+│   │   │   │   ├── 3. User Acquisition, Activation, Retention & Monetization Metrics
+│   │   │   │   │   ├── 3a.sql
+│   │   │   │   │   ├── 3b.sql
+│   │   │   │   │   ├── 3c.sql
+│   │   │   │   │   ├── 3d.sql
+│   │   │   │   │   ├── 3e.sql
+│   │   │   │   │   ├── 3f.sql
+│   │   │   │   │   ├── 3g.sql
+│   │   │   │   │   ├── 3h.sql
+│   │   │   │   │   └── 3i.sql
+│   │   │   │   ├── deploy.yaml
+│   │   │   │   └── readme.md
+│   │   │   └── deploy.yaml
+│   │   ├── Sentinel-dVPN-node
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── README_RU.md
+│   │   │   ├── VARIABLES.md
+│   │   │   ├── VARIABLES_RU.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   ├── dvpn.png
+│   │   │   └── main.sh
+│   │   ├── StableStudio
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── SurrealDB
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── TTS
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── Thorchain-BEPSwap
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── thorchain.png
+│   │   ├── Venice-ElizaOS
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   └── image.png
+│   │   ├── XLM-RoBERTa
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── app.py
+│   │   │   ├── deploy.yaml
+│   │   │   ├── requirements.txt
+│   │   │   └── templates
+│   │   │       └── index.html
+│   │   ├── Yearn.finance
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── yearn.png
+│   │   ├── adminer
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── alpaca-cpp
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── augur
+│   │   │   ├── README.md
+│   │   │   ├── augur.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── authsteem
+│   │   │   ├── README.md
+│   │   │   ├── authsteem.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── auto-gpt
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── entrypoint.sh
+│   │   ├── automatic-deployment-CICD-template
+│   │   │   ├── .gitignore
+│   │   │   ├── .gitmodules
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── common
+│   │   │   │   └── common.sh
+│   │   │   ├── deploy.yaml
+│   │   │   ├── docker-compose.yml
+│   │   │   ├── index.html
+│   │   │   └── javascript
+│   │   │       ├── funcs.sh
+│   │   │       ├── main.bats
+│   │   │       └── main.sh
+│   │   ├── azure-devops-agent
+│   │   │   ├── README.md
+│   │   │   └── deploy.yml
+│   │   ├── babyagi
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── entrypoint.sh
+│   │   ├── babyagi-ui
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── balancer
+│   │   │   ├── README.md
+│   │   │   ├── balancer.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── bancor
+│   │   │   ├── README.md
+│   │   │   ├── bankor.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── bark-small
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── app.py
+│   │   │   ├── deploy.yaml
+│   │   │   ├── public
+│   │   │   │   ├── AkashLogo.svg
+│   │   │   │   └── favicon.ico
+│   │   │   └── requirements.txt
+│   │   ├── base-ssh
+│   │   │   ├── Dockerfile.centos
+│   │   │   ├── Dockerfile.debian
+│   │   │   ├── Dockerfile.suse
+│   │   │   ├── Dockerfile.ubuntu
+│   │   │   ├── README.md
+│   │   │   └── ssh-entrypoint.sh
+│   │   ├── bert
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── app.py
+│   │   │   ├── bert.png
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── requirements.txt
+│   │   │   └── templates
+│   │   │       └── index.html
+│   │   ├── bert-sentiment-analysis
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── app.py
+│   │   │   ├── deploy.yaml
+│   │   │   ├── requirements.txt
+│   │   │   └── templates
+│   │   │       └── index.html
+│   │   ├── big-dipper
+│   │   │   ├── README.md
+│   │   │   ├── bigdipper.jpg
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── bitbucket
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── bitcoin
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yml
+│   │   │   └── init.sh
+│   │   ├── bitcoincashnode
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── bminer-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── bminer.png
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── entrypoint.sh
+│   │   ├── botpress
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── budibase
+│   │   │   ├── README.md
+│   │   │   ├── bb.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── bzminer-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── bzminer.png
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── entrypoint.sh
+│   │   ├── caddy
+│   │   │   ├── README.md
+│   │   │   ├── caddy.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── chatchat
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── chia-bladebit
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── chia.png
+│   │   │   ├── cleanup.sh
+│   │   │   ├── config.json
+│   │   │   ├── config.php
+│   │   │   ├── configs
+│   │   │   │   ├── README.md
+│   │   │   │   ├── bladebit-100-425-2000.yaml
+│   │   │   │   ├── bladebit-32-425-2000.yaml
+│   │   │   │   ├── bladebit-42-425-2000.yaml
+│   │   │   │   ├── bladebit-disk-10-32-2000.yaml
+│   │   │   │   ├── bladebit-disk-100-208-2000.yaml
+│   │   │   │   └── bladebit-disk-16-128-2000.yaml
+│   │   │   ├── deploy.yaml
+│   │   │   ├── nginx-default.conf
+│   │   │   ├── nginx.conf
+│   │   │   ├── run.sh
+│   │   │   ├── sync.sh
+│   │   │   └── sync_rclone.sh
+│   │   ├── chia-bladebit-disk
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── chia.png
+│   │   │   ├── cleanup.sh
+│   │   │   ├── config.json
+│   │   │   ├── config.php
+│   │   │   ├── configs
+│   │   │   │   ├── README.md
+│   │   │   │   ├── bladebit-100-425-2000.yaml
+│   │   │   │   ├── bladebit-32-425-2000.yaml
+│   │   │   │   ├── bladebit-42-425-2000.yaml
+│   │   │   │   ├── bladebit-disk-10-32-2000.yaml
+│   │   │   │   ├── bladebit-disk-100-208-2000.yaml
+│   │   │   │   └── bladebit-disk-16-128-2000.yaml
+│   │   │   ├── deploy.yaml
+│   │   │   ├── nginx-default.conf
+│   │   │   ├── nginx.conf
+│   │   │   ├── run.sh
+│   │   │   ├── sync.sh
+│   │   │   └── sync_rclone.sh
+│   │   ├── chia-madmax
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── chia.png
+│   │   │   ├── cleanup.sh
+│   │   │   ├── config.json
+│   │   │   ├── config.php
+│   │   │   ├── configs
+│   │   │   │   ├── README.md
+│   │   │   │   ├── bladebit-100-425-2000.yaml
+│   │   │   │   ├── bladebit-32-425-2000.yaml
+│   │   │   │   ├── bladebit-42-425-2000.yaml
+│   │   │   │   ├── bladebit-disk-10-32-2000.yaml
+│   │   │   │   ├── bladebit-disk-100-208-2000.yaml
+│   │   │   │   └── bladebit-disk-16-128-2000.yaml
+│   │   │   ├── deploy.yaml
+│   │   │   ├── nginx-default.conf
+│   │   │   ├── nginx.conf
+│   │   │   ├── run.sh
+│   │   │   ├── sync.sh
+│   │   │   └── sync_rclone.sh
+│   │   ├── cjdns-pkt
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── init.sh
+│   │   │   └── pkt.png
+│   │   ├── code-server
+│   │   │   ├── Readme.md
+│   │   │   ├── codeserver.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── codex
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yml
+│   │   ├── comfyui
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── comfyui.png
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── entrypoint.sh
+│   │   ├── concordium
+│   │   │   ├── README.md
+│   │   │   ├── concordium.png
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── config.schema.json
+│   │   ├── confluence
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── couchdb
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── cross-platform-disk-test
+│   │   │   ├── CPDT_Console_ARM
+│   │   │   ├── CPDT_Console_x64
+│   │   │   ├── CPDT_Linux.zip
+│   │   │   ├── Dockerfile
+│   │   │   └── README.md
+│   │   ├── cryptodredge-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── cd.png
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── entrypoint.sh
+│   │   ├── csgo
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── csgo.jpeg
+│   │   │   └── deploy.yaml
+│   │   ├── curve
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── curve.png
+│   │   │   └── deploy.yaml
+│   │   ├── daila
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── startup.sh
+│   │   ├── dart
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── dart.png
+│   │   │   └── deploy.yaml
+│   │   ├── defradb
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── dego-stats
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── dego.png
+│   │   │   └── deploy.yaml
+│   │   ├── dfed
+│   │   │   ├── Readme.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── dfed.png
+│   │   ├── discourse
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   └── discourse.png
+│   │   ├── disk-speed-test
+│   │   │   ├── Dockerfile
+│   │   │   └── run.sh
+│   │   ├── doccano
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── doccano.png
+│   │   ├── dolly-v2-12b
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── instruct_pipeline.py
+│   │   │   ├── main.py
+│   │   │   └── static
+│   │   │       ├── index.html
+│   │   │       ├── script.js
+│   │   │       └── style.css
+│   │   ├── dria
+│   │   │   ├── Dria.png
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── drupal
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── fast
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── fast-logo.png
+│   │   ├── faster-whisper-cpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── faster-whisper-gpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── fio
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── run.sh
+│   │   ├── flame
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── flame.png
+│   │   ├── flan-t5-xxl
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── main.py
+│   │   │   ├── requirements.txt
+│   │   │   └── static
+│   │   │       ├── index.html
+│   │   │       ├── script.js
+│   │   │       └── style.css
+│   │   ├── flowise
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── folding-at-home
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── fh.png
+│   │   ├── freeflix-nucleus
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── flix.png
+│   │   ├── fuse-network-node
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── geekbench
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── geekbench5-logo.jpg
+│   │   ├── ghost
+│   │   │   ├── README.md
+│   │   │   ├── deploy-ipfs.yaml
+│   │   │   ├── deploy-mysql.yaml
+│   │   │   └── deploy.yaml
+│   │   ├── ghrunner
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── gminer-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── gminer.png
+│   │   ├── goosebin
+│   │   │   └── deploy.yaml
+│   │   ├── gpt-neo
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── main.py
+│   │   │   ├── static
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   └── templates
+│   │   │       └── index.html
+│   │   ├── gpt4all
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── gpustack
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── gpustack-worker
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── grafana
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── grafana.png
+│   │   ├── grok
+│   │   │   ├── Dockerfile
+│   │   │   ├── Grok_logo.png
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── grok-app.png
+│   │   │   ├── main.py
+│   │   │   ├── requirements.txt
+│   │   │   └── static
+│   │   │       ├── grok-logo.png
+│   │   │       ├── index.html
+│   │   │       ├── script.js
+│   │   │       └── style.css
+│   │   ├── handshake
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── hashicorp-vault
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── hcv.png
+│   │   ├── holdfastnaw
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── holdfast.jpeg
+│   │   ├── honeygain
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── honey.png
+│   │   │   └── honeygain.png
+│   │   ├── influxdb
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── injective
+│   │   │   ├── README.md
+│   │   │   └── deploy.yml
+│   │   ├── invoke-ai-cpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── invoke-ai-gpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── iperf3
+│   │   │   └── deploy.yaml
+│   │   ├── ipfs
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── ipfs.png
+│   │   ├── iproyal-pawns
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── iproyal.jpeg
+│   │   │   └── pawns.png
+│   │   ├── iron-fish
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── iron.jpeg
+│   │   │   ├── node.yaml
+│   │   │   └── run.sh
+│   │   ├── jenkins
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── jira
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── jira.png
+│   │   ├── json-server
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── juno
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── jupyter
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── jn.png
+│   │   ├── kanboard
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── kb.png
+│   │   ├── kawpow-pool-meowcoin
+│   │   │   ├── Dockerfile
+│   │   │   ├── Dockerfile-pool
+│   │   │   ├── README.md
+│   │   │   ├── blocknotify
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── meow.png
+│   │   │   ├── start.sh
+│   │   │   └── starter.sh
+│   │   ├── kawpow-pool-neoxa
+│   │   │   ├── Dockerfile
+│   │   │   ├── Dockerfile-pool
+│   │   │   ├── README.md
+│   │   │   ├── blocknotify
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── neoxa.png
+│   │   │   ├── start.sh
+│   │   │   └── starter.sh
+│   │   ├── kawpow-pool-ravencoin
+│   │   │   ├── Dockerfile
+│   │   │   ├── Dockerfile-pool
+│   │   │   ├── README.md
+│   │   │   ├── blocknotify
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── ravencoin.png
+│   │   │   ├── start.sh
+│   │   │   └── starter.sh
+│   │   ├── keycloak-iam
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── kk.png
+│   │   ├── knowyourdefi
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── kyd.png
+│   │   ├── langflow
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── librespeed
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── lolminer-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── lolminer.png
+│   │   ├── luaswap
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── lua.png
+│   │   ├── lunie-lite
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── lunie.png
+│   │   ├── matomo
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── matomo.png
+│   │   ├── mattermost
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── microbox
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── minecraft
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── minesweeper
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── minio
+│   │   │   ├── README.md
+│   │   │   └── deploy.yml
+│   │   ├── mintr
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── mintr.png
+│   │   ├── monero-pool
+│   │   │   ├── Dockerfile-for-Akash
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── monero.png
+│   │   │   ├── run.sh
+│   │   │   └── start.sh
+│   │   ├── moneroocean
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── configs
+│   │   │   │   ├── 128vCPU.yaml
+│   │   │   │   └── 32vCPU.yaml
+│   │   │   ├── deploy.yaml
+│   │   │   ├── monero.png
+│   │   │   └── run.sh
+│   │   ├── mongoDB
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── monkeytest
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── run.sh
+│   │   ├── mordhau
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── mordhau.jpeg
+│   │   ├── morpheus-lumerin-node
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── morpheus-lumerin-node.jpg
+│   │   │   └── morpheus_logo.png
+│   │   ├── nanominer-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── nanominer.jpeg
+│   │   ├── nbminer-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── nbminer.png
+│   │   ├── near
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── nextcloud
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── nextcloud.png
+│   │   ├── nextjs
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── nextjs.png
+│   │   ├── nginx-letsencrypt-proxy
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   ├── le.png
+│   │   │   └── nginx.conf
+│   │   ├── nitropage
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── run.sh
+│   │   ├── odoo
+│   │   │   ├── README.md
+│   │   │   └── deploy.yml
+│   │   ├── ollama-cpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── ollama-gpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── onetimepad
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── onezerominer-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── onezerominer.png
+│   │   ├── open-gpt
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── opengptx.png
+│   │   ├── open-webui-cpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── open-webui-gpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── openspeedtest
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── openspeedtest-logo.jpg
+│   │   ├── osmosis-fe
+│   │   │   └── deploy.yaml
+│   │   ├── owncloud
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── owncloud.png
+│   │   ├── packetstream
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── packet.jpeg
+│   │   │   └── packetstream.png
+│   │   ├── pacman
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── pancake-swap
+│   │   │   ├── GUIDE.md
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── pswap.png
+│   │   ├── peerjs-server
+│   │   │   ├── README.md
+│   │   │   ├── deployment.yaml
+│   │   │   └── peerjs-server.png
+│   │   ├── persistent-storage-performance-testing
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── pgadmin4
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── phoronix
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── phoronix-test-suite.xml
+│   │   │   └── run.sh
+│   │   ├── pkt-miner
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── pkt.png
+│   │   │   └── run.sh
+│   │   ├── pokt-network
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yml
+│   │   │   ├── example_chains.json
+│   │   │   ├── main.sh
+│   │   │   └── pokt-logo.png
+│   │   ├── polkadot
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── postgres
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── postgres-restore
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── presearch
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── presearch.png
+│   │   ├── privategpt-cpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── privategpt-gpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── prysm-beacon
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── qbittorrent
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy-ssh-tunnel.yaml
+│   │   │   ├── deploy.yaml
+│   │   │   ├── qBittorrent.png
+│   │   │   ├── qb.png
+│   │   │   └── ssh-tunnel.png
+│   │   ├── quai-gpu-miner
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── quai-network.jpg
+│   │   ├── quill-editor
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── quill.png
+│   │   ├── radicle
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   └── deploy.yaml
+│   │   ├── rainbowminer
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── rainbow.png
+│   │   │   ├── run.sh
+│   │   │   └── setup.json
+│   │   ├── rainbowminer-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── mpm.png
+│   │   │   ├── run.sh
+│   │   │   └── setup.json
+│   │   ├── rainbowminer-c12
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── run.sh
+│   │   │   └── setup.json
+│   │   ├── raptoreum-miner
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── raptoreum.jpeg
+│   │   ├── ray
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── ray-nightly-py310-gpu.yml
+│   │   │   └── ray.png
+│   │   ├── redis
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── redis.png
+│   │   ├── redmine
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── redmine.png
+│   │   ├── redpajama-incite-7b-instruct
+│   │   │   ├── .dockerignore
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── main.py
+│   │   │   └── static
+│   │   │       ├── index.html
+│   │   │       ├── script.js
+│   │   │       └── style.css
+│   │   ├── renprotocol
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── ren.png
+│   │   ├── rigel-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── rigel.png
+│   │   ├── satisfactory-server
+│   │   │   └── deploy.yaml
+│   │   ├── semantra
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── serge-cpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── serge-gpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── serum
+│   │   │   ├── GUIDE.md
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── serum.png
+│   │   ├── serverbench
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── run.sh
+│   │   │   └── serverbench.sh
+│   │   ├── sifchain-ui
+│   │   │   └── README.md
+│   │   ├── snake-game
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── softether-vpn
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── TODO.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── launch
+│   │   │   ├── run_locally
+│   │   │   └── se.png
+│   │   ├── sovryn-node
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── speedtest-cli
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   ├── run.sh
+│   │   │   └── speedtest-logo.png
+│   │   ├── speedtest-tracker
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── squad
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── squad.jpeg
+│   │   ├── srbminer-multi-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── srbminer.jpeg
+│   │   ├── ssh-ubuntu
+│   │   │   ├── Dockerfile.ubuntu
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── ssh-entrypoint.sh
+│   │   │   └── ubuntu-logo-icon.png
+│   │   ├── stable-diffusion-ui
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── conf.json
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   ├── log.txt
+│   │   │   └── stablediffusion.png
+│   │   ├── stable-diffusion-webui
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── stableswarmui
+│   │   │   ├── .dockerignore
+│   │   │   ├── .gitattributes
+│   │   │   ├── .gitignore
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── Dockerfile
+│   │   │   ├── LICENSE.txt
+│   │   │   ├── README.md
+│   │   │   ├── StableSwarmUI.sln
+│   │   │   ├── colab
+│   │   │   │   ├── README.md
+│   │   │   │   └── colab-notebook.ipynb
+│   │   │   ├── deploy.yml
+│   │   │   ├── docker-compose.yml
+│   │   │   ├── docs
+│   │   │   │   ├── API.md
+│   │   │   │   ├── APIRoutes
+│   │   │   │   │   ├── AdminAPI.md
+│   │   │   │   │   ├── BackendAPI.md
+│   │   │   │   │   ├── BasicAPIFeatures.md
+│   │   │   │   │   ├── ComfyUIWebAPI.md
+│   │   │   │   │   ├── GridGeneratorExtension.md
+│   │   │   │   │   ├── ImageBatchToolExtension.md
+│   │   │   │   │   ├── ModelsAPI.md
+│   │   │   │   │   ├── T2IAPI.md
+│   │   │   │   │   └── UtilAPI.md
+│   │   │   │   ├── Advanced Usage.md
+│   │   │   │   ├── Basic Usage.md
+│   │   │   │   ├── Command Line Arguments.md
+│   │   │   │   ├── Features
+│   │   │   │   │   ├── Autocompletions.md
+│   │   │   │   │   ├── ControlNet.md
+│   │   │   │   │   ├── IPAdapter-ReVision.md
+│   │   │   │   │   ├── Presets.md
+│   │   │   │   │   ├── Prompt Syntax.md
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   └── Video.md
+│   │   │   │   ├── Making Extensions.md
+│   │   │   │   ├── Model Support.md
+│   │   │   │   ├── Motivations.md
+│   │   │   │   ├── README.md
+│   │   │   │   ├── User Settings.md
+│   │   │   │   ├── Using More GPUs.md
+│   │   │   │   ├── Why Use Swarm.md
+│   │   │   │   └── images
+│   │   │   │       ├── add-swarm-backend.png
+│   │   │   │       ├── autocompletions.png
+│   │   │   │       ├── config-swarm-backend.png
+│   │   │   │       ├── draggable.png
+│   │   │   │       ├── grids.png
+│   │   │   │       ├── lan-access.png
+│   │   │   │       ├── local-network.png
+│   │   │   │       ├── presets.png
+│   │   │   │       ├── queue-running.png
+│   │   │   │       ├── refiners.png
+│   │   │   │       ├── remote-machine-open.png
+│   │   │   │       ├── servermodelpath.png
+│   │   │   │       ├── usecomfy.png
+│   │   │   │       └── yourfirstprompt.png
+│   │   │   ├── example.gif
+│   │   │   ├── install-linux.sh
+│   │   │   ├── languages
+│   │   │   │   ├── ar.json
+│   │   │   │   ├── de.json
+│   │   │   │   ├── en.json
+│   │   │   │   ├── es.json
+│   │   │   │   ├── fr.json
+│   │   │   │   ├── hi.json
+│   │   │   │   ├── it.json
+│   │   │   │   ├── ja.json
+│   │   │   │   ├── nl.json
+│   │   │   │   ├── pt.json
+│   │   │   │   ├── ru.json
+│   │   │   │   ├── sv.json
+│   │   │   │   ├── vi.json
+│   │   │   │   └── zh.json
+│   │   │   ├── launch-docker.sh
+│   │   │   ├── launch-linux.sh
+│   │   │   ├── launchtools
+│   │   │   │   ├── comfy-install-linux.sh
+│   │   │   │   ├── docker.sh
+│   │   │   │   ├── pickle-to-safetensors.py
+│   │   │   │   └── pickle_module.py
+│   │   │   ├── model
+│   │   │   ├── src
+│   │   │   │   ├── Accounts
+│   │   │   │   │   ├── Session.cs
+│   │   │   │   │   ├── SessionHandler.cs
+│   │   │   │   │   └── User.cs
+│   │   │   │   ├── Backends
+│   │   │   │   │   ├── AbstractT2IBackend.cs
+│   │   │   │   │   ├── BackendHandler.cs
+│   │   │   │   │   ├── NetworkBackendUtils.cs
+│   │   │   │   │   └── SwarmSwarmBackend.cs
+│   │   │   │   ├── BuiltinExtensions
+│   │   │   │   │   ├── AutoWebUIBackend
+│   │   │   │   │   ├── ComfyUIBackend
+│   │   │   │   │   ├── DynamicThresholding
+│   │   │   │   │   ├── GridGenerator
+│   │   │   │   │   ├── ImageBatchTool
+│   │   │   │   │   ├── Scorers
+│   │   │   │   │   └── StabilityAPI
+│   │   │   │   ├── Core
+│   │   │   │   │   ├── Extension.cs
+│   │   │   │   │   ├── Program.cs
+│   │   │   │   │   ├── Settings.cs
+│   │   │   │   │   └── WebServer.cs
+│   │   │   │   ├── DataHolders
+│   │   │   │   │   ├── DataHolder.cs
+│   │   │   │   │   └── NetConfigMetadata.cs
+│   │   │   │   ├── GlobalSuppressions.cs
+│   │   │   │   ├── GlobalUsings.cs
+│   │   │   │   ├── Pages
+│   │   │   │   │   ├── Error
+│   │   │   │   │   ├── Install.cshtml
+│   │   │   │   │   ├── Shared
+│   │   │   │   │   ├── Text2Image.cshtml
+│   │   │   │   │   ├── _ViewImports.cshtml
+│   │   │   │   │   └── _ViewStart.cshtml
+│   │   │   │   ├── StableSwarmUI.csproj
+│   │   │   │   ├── Text2Image
+│   │   │   │   │   ├── T2IEngine.cs
+│   │   │   │   │   ├── T2IModel.cs
+│   │   │   │   │   ├── T2IModelClass.cs
+│   │   │   │   │   ├── T2IModelClassSorter.cs
+│   │   │   │   │   ├── T2IModelHandler.cs
+│   │   │   │   │   ├── T2IMultiStepObjectBuilder.cs
+│   │   │   │   │   ├── T2IParamInput.cs
+│   │   │   │   │   ├── T2IParamTypes.cs
+│   │   │   │   │   └── T2IPreset.cs
+│   │   │   │   ├── Utils
+│   │   │   │   │   ├── AutoCompleteListHelper.cs
+│   │   │   │   │   ├── CliplikeTokenizer.cs
+│   │   │   │   │   ├── Image.cs
+│   │   │   │   │   ├── ImageMetadataTracker.cs
+│   │   │   │   │   ├── LanguagesHelper.cs
+│   │   │   │   │   ├── Logs.cs
+│   │   │   │   │   ├── MemCleaner.cs
+│   │   │   │   │   ├── MemoryNum.cs
+│   │   │   │   │   ├── NvidiaUtil.cs
+│   │   │   │   │   ├── PromptRegion.cs
+│   │   │   │   │   ├── ProxyHandler.cs
+│   │   │   │   │   ├── PythonLaunchHelper.cs
+│   │   │   │   │   ├── SystemStatusMonitor.cs
+│   │   │   │   │   ├── Utilities.cs
+│   │   │   │   │   ├── WebUtil.cs
+│   │   │   │   │   ├── WebhookManager.cs
+│   │   │   │   │   └── WildcardsHelper.cs
+│   │   │   │   ├── WebAPI
+│   │   │   │   │   ├── API.cs
+│   │   │   │   │   ├── APICall.cs
+│   │   │   │   │   ├── APICallReflectBuilder.cs
+│   │   │   │   │   ├── AdminAPI.cs
+│   │   │   │   │   ├── BackendAPI.cs
+│   │   │   │   │   ├── BasicAPIFeatures.cs
+│   │   │   │   │   ├── ModelsAPI.cs
+│   │   │   │   │   ├── T2IAPI.cs
+│   │   │   │   │   └── UtilAPI.cs
+│   │   │   │   ├── srcdata
+│   │   │   │   │   └── Tokensets
+│   │   │   │   └── wwwroot
+│   │   │   │       ├── css
+│   │   │   │       ├── favicon.ico
+│   │   │   │       ├── fonts
+│   │   │   │       ├── imgs
+│   │   │   │       └── js
+│   │   │   └── update-linuxmac.sh
+│   │   ├── status
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── steamcmd
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── steam.png
+│   │   ├── steampipe
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── steam.png
+│   │   ├── steemcn
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── substrate-node
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── supermario
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── sushiswap
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── sushi.png
+│   │   ├── synthetix.exchange
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── synthetix.png
+│   │   ├── t-rex-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── entrypoint.sh
+│   │   │   └── trexminer.png
+│   │   ├── teamspeak
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── teamspeak.png
+│   │   ├── tensorflow-jupyter-ezkl
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── jn.png
+│   │   ├── tensorflow-jupyter-mnist
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── jn.png
+│   │   ├── tensorflow-serving-mnist
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── tf.png
+│   │   ├── tensorflow-webapp-mnist
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── tf.png
+│   │   ├── tetris
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── tetris2
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── text-generation-webui
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── tf2
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── tf2.jpeg
+│   │   ├── tgpt
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── entrypoint.sh
+│   │   ├── thirdweb
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── thirdweb.png
+│   │   ├── tor-proxy
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── tor.png
+│   │   ├── torchbench
+│   │   │   ├── 579e5dd7ae29
+│   │   │   ├── Akash_Gpu_Benchmark_Notebook.ipynb
+│   │   │   ├── README.md
+│   │   │   ├── cuda_11_7.Dockerfile
+│   │   │   ├── cuda_12_0.Dockerfile
+│   │   │   ├── cuda_12_1.Dockerfile
+│   │   │   ├── docker_healthcheck.py
+│   │   │   ├── fix-permissions
+│   │   │   ├── initial-condarc
+│   │   │   ├── jupyter_server_config.py
+│   │   │   ├── run.sh
+│   │   │   ├── run_cpu_only.sh
+│   │   │   ├── run_tacotron.sh
+│   │   │   ├── start-notebook.sh
+│   │   │   ├── start-singleuser.sh
+│   │   │   ├── start.sh
+│   │   │   ├── torchbench_gpu_sdl_cuda11.7.yaml
+│   │   │   └── torchbench_gpu_sdl_cuda12_0.yaml
+│   │   ├── traffmonetizer
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── traff.jpeg
+│   │   │   └── traffmonetizer.png
+│   │   ├── tronwallet
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── tronwallet.png
+│   │   ├── ufo-data-vis
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── uma-protocol
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── uma.png
+│   │   ├── uniswap
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── uniswap.png
+│   │   ├── uptime-kuma
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── kuma.png
+│   │   ├── v2ray
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   ├── run.sh
+│   │   │   └── v2ray.png
+│   │   ├── valheim
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── valheim.yaml
+│   │   ├── vaultwarden
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── readme.md
+│   │   │   └── vw.png
+│   │   ├── vidulum
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── vllm
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── imgs
+│   │   │   │   ├── benchmarks.png
+│   │   │   │   ├── compare.png
+│   │   │   │   └── wizardllm2meme.png
+│   │   │   ├── vllm_crew.ipynb
+│   │   │   ├── vllm_crew_notebook_deployment.yml
+│   │   │   ├── vllm_no_ui_deployment.yml
+│   │   │   ├── vllm_with_openwebui_dolphin2-9-llama3-70b.yml
+│   │   │   ├── vllm_with_openwebui_wizardlm2-7b.yml
+│   │   │   └── vllm_with_openwebui_wizardlm2-8x22.yml
+│   │   ├── waku
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.sqlite.yaml
+│   │   │   ├── deploy.yaml
+│   │   │   └── waku.jpeg
+│   │   ├── weaviate
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── webtop
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   └── webtop.png
+│   │   ├── whisper-asr-cpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── whisper-asr-gpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── whisper-gui-cpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── whisper-gui-gpu
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── whisperog-cpu
+│   │   │   └── Dockerfile
+│   │   ├── whoogle-search
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy-ssh-tunnel.yaml
+│   │   │   ├── deploy.yaml
+│   │   │   ├── wg.png
+│   │   │   └── whoogle.png
+│   │   ├── wikijs
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── wildrig-multi-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── deploy.yaml
+│   │   │   └── entrypoint.sh
+│   │   ├── witnesschain-watchtower
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   └── logo.jpg
+│   │   ├── wordpress
+│   │   │   ├── README.md
+│   │   │   └── deploy.yaml
+│   │   ├── x-ui
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yml
+│   │   │   ├── run.sh
+│   │   │   └── xui.png
+│   │   ├── xmrig
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── run.sh
+│   │   │   └── xr.png
+│   │   ├── xmrig-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   ├── run.sh
+│   │   │   └── xmrminer.png
+│   │   ├── xmrig-moneroocean-c11
+│   │   │   ├── Dockerfile
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── run.sh
+│   │   ├── yacy
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── yacy.png
+│   │   ├── yfii
+│   │   │   ├── README.md
+│   │   │   ├── config.json
+│   │   │   ├── deploy.yaml
+│   │   │   └── yfii.png
+│   │   └── zammad
+│   │       ├── README.md
+│   │       ├── config.json
+│   │       ├── deploy.yaml
+│   │       └── zammad.png
+│   └── docs-akash
+│       ├── .git
+│       │   ├── FETCH_HEAD
+│       │   ├── HEAD
+│       │   ├── ORIG_HEAD
+│       │   ├── branches
+│       │   ├── config
+│       │   ├── config.worktree
+│       │   ├── description
+│       │   ├── hooks
+│       │   │   ├── applypatch-msg.sample
+│       │   │   ├── commit-msg.sample
+│       │   │   ├── fsmonitor-watchman.sample
+│       │   │   ├── post-update.sample
+│       │   │   ├── pre-applypatch.sample
+│       │   │   ├── pre-commit.sample
+│       │   │   ├── pre-merge-commit.sample
+│       │   │   ├── pre-push.sample
+│       │   │   ├── pre-rebase.sample
+│       │   │   ├── pre-receive.sample
+│       │   │   ├── prepare-commit-msg.sample
+│       │   │   ├── push-to-checkout.sample
+│       │   │   ├── sendemail-validate.sample
+│       │   │   └── update.sample
+│       │   ├── index
+│       │   ├── info
+│       │   │   ├── exclude
+│       │   │   └── sparse-checkout
+│       │   ├── logs
+│       │   │   ├── HEAD
+│       │   │   └── refs
+│       │   │       ├── heads
+│       │   │       └── remotes
+│       │   ├── objects
+│       │   │   ├── info
+│       │   │   └── pack
+│       │   │       ├── pack-1b1442ea76e83be3b93eea38935c8fddbb58f400.idx
+│       │   │       ├── pack-1b1442ea76e83be3b93eea38935c8fddbb58f400.pack
+│       │   │       └── pack-1b1442ea76e83be3b93eea38935c8fddbb58f400.rev
+│       │   └── refs
+│       │       ├── heads
+│       │       │   └── master
+│       │       ├── remotes
+│       │       │   └── origin
+│       │       └── tags
+│       ├── .gitignore
+│       ├── .nojekyll
+│       ├── CNAME
+│       ├── LICENSE
+│       ├── Readme.md
+│       ├── astro.config.mjs
+│       ├── package-lock.json
+│       ├── package.json
+│       ├── prettier.config.js
+│       ├── src
+│       │   ├── content
+│       │   │   ├── Docs
+│       │   │   │   ├── _sequence.ts
+│       │   │   │   ├── akash-api
+│       │   │   │   ├── akash-app
+│       │   │   │   ├── akash-code-contributors---policies-and-standards
+│       │   │   │   ├── akash-development-environment
+│       │   │   │   ├── akash-end-to-end-testing-provider
+│       │   │   │   ├── akash-node-table-of-contents
+│       │   │   │   ├── akash-nodes
+│       │   │   │   ├── akash-provider-operators
+│       │   │   │   ├── akash-provider-service-and-associated-sub-services
+│       │   │   │   ├── architecture
+│       │   │   │   ├── assets
+│       │   │   │   ├── deployments
+│       │   │   │   ├── getting-started
+│       │   │   │   ├── guides
+│       │   │   │   ├── index.mdx
+│       │   │   │   ├── mainnet-13-upgrade
+│       │   │   │   ├── network-features
+│       │   │   │   ├── other-resources
+│       │   │   │   ├── providers
+│       │   │   │   ├── testnet
+│       │   │   │   └── validators
+│       │   │   └── config.ts
+│       │   ├── env.d.ts
+│       │   └── swiper.d.ts
+│       ├── tailwind.config.cjs
+│       └── tsconfig.json
+└── project_structure.txt
+
+421 directories, 1412 files

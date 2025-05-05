@@ -1,0 +1,3 @@
+[submodule "data/awesome-akash"]
+	path = data/awesome-akash
+	url = https://github.com/akash-network/awesome-akash

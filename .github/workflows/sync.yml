@@ -1,66 +1,33 @@
-name: Sync Akash Knowledge Base
+name: Sync Awesome Akash
 
 on:
+  push:
+    paths:
+      - 'main'
   schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours
-  workflow_dispatch:
+    - cron: '0 0 */7 * *' # Every 7 days at midnight UTC
 
 jobs:
-  sync:
+  sync-awesome-akash:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout the repo with submodules
+      - name: Checkout this repo
         uses: actions/checkout@v3
-        with:
-          submodules: recursive  # This will still be needed for other submodules
-          fetch-depth: 0  # Needed to get full history and submodule commits
 
-      - name: Initialize and update submodules
+      - name: Set up Git
         run: |
-          git submodule update --init --recursive
-
-      - name: Debug directory structure
-        run: |
-          echo "Root directory:"
-          ls -la
-          echo "data directory:"
-          ls -la data || echo "⚠️ 'data' directory not found"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Update awesome-akash repository
         run: |
           if [ -d "data/awesome-akash" ]; then
+            echo "✅ Directory exists. Pulling latest changes from 'main' branch..."
             cd data/awesome-akash
-            git pull origin master
-            cd ../..
-          else
-            echo "⚠️ awesome-akash directory not found, cloning it now..."
-            git clone https://github.com/akash-network/awesome-akash data/awesome-akash
-          fi
-
-      - name: Update docs-akash submodule
-        run: |
-          if [ -d "data/docs-akash" ]; then
-            cd data/docs-akash
-            git checkout main
             git pull origin main
             cd ../..
           else
-            echo "⚠️ docs-akash directory not found, skipping."
+            echo "⚠️ Directory not found. Cloning the repository..."
+            git clone --branch main https://github.com/akash-network/awesome-akash data/awesome-akash
           fi
-
-      - name: Set up Git
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-      - name: Check for changes
-        run: |
-          git add .
-          git diff --cached --quiet || echo "CHANGES_FOUND=true" >> $GITHUB_ENV
-
-      - name: Commit & Push if Changes Found
-        if: env.CHANGES_FOUND == 'true'
-        run: |
-          git commit -m "📚 Auto-update Akash knowledge base"
-          git push

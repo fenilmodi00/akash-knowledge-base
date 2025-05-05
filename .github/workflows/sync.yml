@@ -1,0 +1,46 @@
+name: Sync Akash Knowledge Base
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # runs every 6 hours
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo with submodules
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0  # needed to track submodule changes
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Update awesome-akash submodule
+        run: |
+          cd data/awesome-akash
+          git checkout main
+          git pull origin main
+          cd ../..
+
+      - name: Update docs-akash sparse-checkout
+        run: |
+          cd data/docs-akash
+          git pull origin main
+          cd ../..
+
+      - name: Check for changes
+        run: |
+          git add .
+          git diff --cached --quiet || echo "CHANGES_FOUND=true" >> $GITHUB_ENV
+
+      - name: Commit & Push if Changes Found
+        if: env.CHANGES_FOUND == 'true'
+        run: |
+          git commit -m "📚 Auto-update Akash knowledge base"
+          git push
